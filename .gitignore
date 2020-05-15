@@ -1,0 +1,17 @@
+#folder dist
+dist
+
+#node_modules
+node_modules
+
+#Json files
+package.json
+
+# Local Netlify folder
+.netlify
+
+
+.babelrc
+netlify.toml
+.jshintrc
+package-lock.json

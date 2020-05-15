@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link href="style.css" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,700,700i,800,900,900i&display=swap" rel="stylesheet">
+<body>
+    <div id="mainWrap">
+        <section class="leftBar">
+            <div class="controlUnit">
+                <div class="units">
+                    <div class="controlBtn update"></div>
+                    <div class="controlBtn temprature"></div>
+                </div>
+            </div>
+            
+            <div class="todayWeather">
+                <div class="todayWeatherTitle">
+                    <h1 class="todayWeatherTitle__location"></h1>
+                    <h2 class="todayWeatherTitle__todaysValue">
+                        <div class="weekDay"></div>
+                        <div class="numberday"></div>
+                        <div class="mounthName"></div>
+                        <div class="time"></div>
+                    </h2>
+                </div>
+                <div class="mainTemperature">
+                    <div class="mainTemperature__count">
+                        <h2 class="temperature_degree"></h2>
+                        <div class="icon"></div>
+
+                    </div>
+                    <div class="information">
+                        <div class="temperature_description">
+                            <h3 class="temperature_description_title"><span class="summary"></span></h3>
+                            <h3 class="temperature_description_title"><span class="apparentTemperature"></span></h3>
+                            <h3 class="temperature_description_title"><span class="wind"></span></h3>
+                            <h3 class="temperature_description_title"><span class="humidity"></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="threeDayForecast">
+                <div class="tomorrow">
+                    <h3></h3>
+                    <h4></h4>
+                    <div></div>
+                </div>
+                <div class="afterTomorrow">
+                    <h3></h3>
+                    <h4></h4>
+                    <div></div>
+                </div>
+                <div class="someDay">
+                    <h3></h3>
+                    <h4></h4>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rightBar">
+            <form action="get">
+                <label for="sityName">WRITE CITY</label> 
+                <div class="inputs">
+                    <input type="text" name="sity" id="sityName" onchange="">
+                    <input type="button" class="sityBtn" value="Button" >
+                </div>
+                <div class = 'positionOfInputCity'></div>
+            </form>
+            <div class="geolocation" id="map">
+    
+            </div>
+        </section>
+    </divcl>
+    <script class="yandex" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=728279d7-0258-48b6-a0c5-db007750b84a" type="text/javascript"></script>
+    <!-- <script src="common.js"></script> -->
+</body>
+</html>
